@@ -1,0 +1,68 @@
+.banner{
+    display:flex;
+    flex-direction: row;
+}
+
+.left{
+    flex:1;
+    /* background-color: tomato; */
+    padding-left:12%;
+}
+.right{
+    flex: 1;
+    /* background-color: violet; */
+}
+
+.left-content , .right-content{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.right-content img{
+    height:70vh;
+    width:60vh;
+    margin-left: 20%;
+}
+
+.heading{
+    /* background-color: yellowgreen; */
+    margin-top: 5rem;
+    font-size: 4rem;
+    align-items: left;
+    /* width:90%; */
+}
+.heading > h5{
+
+    text-align: left;
+}
+
+.about{
+    /* background-color: steelblue; */
+    margin-top:1.5rem;
+    width:80%
+}
+.about > p{
+    color:gray;
+    text-align: left;
+}
+
+.learnbutton{
+    margin-top: 1.5rem;
+    text-align: left;
+}
+.learnbutton button{
+    border: 1px solid black;
+    padding:.5rem;
+    width:8rem;
+    border-radius:10px;
+    font-size: 15px;
+}
+
+.images{
+    margin-top: 3rem;
+    text-align: left;
+}
+.images > img{
+    margin-left: .8rem;
+}

@@ -1,0 +1,104 @@
+.navbar{
+    display:flex;
+}
+
+.logo{
+    /* background-color: yellow; */
+    flex: 1;
+    /* z-index:2; */
+    display: flex;
+    align-items: flex-start;
+}
+
+.headers{
+   
+    flex:9;
+    display: flex;
+}
+.preHeaders{
+    /* background-color: yellowgreen; */
+    flex: 7; 
+    display: flex;
+    list-style:none;
+    gap:2rem
+}
+.log{
+    /* background-color: turquoise; */
+    flex:1.5;
+}
+.hamburger{
+flex:.5;
+display:none;
+}
+
+.sigbutton{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+}
+.nocompanybox{
+    display: none;
+}
+.nobox{
+    display: none;
+}
+
+.box {
+    font-size: 15px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    height:8rem;
+    width:8rem;
+    position: absolute;
+    left: 10%;
+}
+.box li > img{
+    padding:0;
+    margin-top: 0px;
+    margin-right:10px;
+}
+.companybox{
+    font-size: 15px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    position: absolute;
+}
+
+@media  screen and (max-width: 720px) {
+    .box ,.companybox{
+        all: revert;
+    }
+   .preHeaders, .headers ,.sigbutton{
+        flex-direction: column;
+    }
+    .preHeaders, .log{
+        flex:unset;
+    }
+    .headers{
+        position: absolute;
+        top:0;
+        width:60%;
+        right:0%;
+        height: 100vh;
+        justify-content: start;
+    }
+    .preHeaders{
+        margin-top: 3rem;
+    }
+    .box ,.companybox{
+        margin-left:20% ;
+    }
+    .hamburger{
+        display:unset;
+        position:absolute;
+        right:0;
+    }
+    .nocontent{
+        right:300%;
+    } 
+}
