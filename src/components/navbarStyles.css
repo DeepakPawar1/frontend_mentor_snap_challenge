@@ -68,7 +68,13 @@ display:none;
     box-shadow: 0 0 10px #ccc;
     position: absolute;
 }
-
+.log button{
+    border: 1px solid black;
+    padding:.5rem;
+    width:8rem;
+    border-radius:10px;
+    font-size: 15px;
+}
 @media  screen and (max-width: 720px) {
     .box ,.companybox{
         all: revert;

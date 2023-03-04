@@ -1,5 +1,6 @@
 import './bannerStyles.css';
 import bannerImg from '../assets/images/image-hero-desktop.png';
+import bannerImgMob from '../assets/images/image-hero-mobile.png';
 import second from '../assets/images/client-audiophile.svg'
 import third from '../assets/images/client-meet.svg'
 import first from '../assets/images/client-databiz.svg'
@@ -31,7 +32,10 @@ function Banner(){
             </div>
             <div className="right">
                 <div className="right-content">
+                    <picture>
+                    <source media="(min-width: 720px)" srcset={bannerImgMob}/>
                     <img src={bannerImg} alt=""/>
+                    </picture>
                 </div>
             </div>
         </div>

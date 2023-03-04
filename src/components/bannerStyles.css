@@ -21,14 +21,16 @@
 
 .right-content img{
     height:70vh;
-    width:60vh;
+    width:70vh;
     margin-left: 20%;
+    max-width:100%;
+    
 }
 
 .heading{
     /* background-color: yellowgreen; */
     margin-top: 5rem;
-    font-size: 4rem;
+    font-size: 5vw;
     align-items: left;
     /* width:90%; */
 }
@@ -60,9 +62,53 @@
 }
 
 .images{
+    /* display: flex; */
     margin-top: 3rem;
     text-align: left;
 }
 .images > img{
     margin-left: .8rem;
+}
+
+
+@media  screen and (max-width: 720px) {
+.banner{
+    display:flex;
+    flex-direction: column-reverse;
+}
+.right .right-content picture > img{
+    margin-left:0;
+    width:100%;
+    height: 80%
+}
+.about , .heading{
+    width: 100%;
+}
+.left{
+    padding-left: 0;
+}
+.learnbutton{
+    text-align: center;
+}
+.learnbutton button{
+    background-color: black;
+}
+.heading > h5{
+    font-size: 8vw;
+}
+.heading{
+    margin-top: 0;
+}
+.right-content{
+    height:unset;
+}
+.images > img{
+width: 3rem;
+padding:0;
+margin:0;
+/* margin-right: 1rem; */
+}
+/* .body{
+    padd
+} */
 }
